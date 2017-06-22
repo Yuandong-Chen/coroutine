@@ -272,7 +272,7 @@ int coroutine_yield(Sched_t *S, void *chl){
 int coroutine_status(Sched_t *S, int cid){
     enum STATUS ret = S->files[cid].op;
     if((ret == READY) || (ret == SUSPEND) || (ret == RUNNING))
-        return 1;
+        return ret;
 
     return 0;
 }

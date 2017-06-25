@@ -232,7 +232,9 @@ void cmain_relay(Sched_t *S, int to, void *send, int isResume)
 }
 
 int coroutine_resume(Sched_t *S, int cid, void *chl) {
-
+    if(cid == S->running)
+        return chl;
+    
     if(S->running)
     {
         relay_cmain(S, S->running, cid, chl, 1);

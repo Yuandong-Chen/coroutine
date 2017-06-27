@@ -45,7 +45,7 @@ int _free_file(Sched_t *S, int cid)
         assert(0);
     }
 
-    S->files[cid].op == NONE;
+    S->files[cid].op = NONE;
 
     if(S->files[cid].co)
     {

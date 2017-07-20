@@ -87,7 +87,7 @@ Sched_t* coroutine_open(void)
 void coroutine_close(Sched_t **SC) {
     Sched_t *S = *SC;
     int i;
-    for (i = 1; i < MAXCOROUTINES - 1; ++i)
+    for (i = 1; i < MAXCOROUTINES; ++i)
     {
         
         if(S->files[i].op && S->files[i].co){

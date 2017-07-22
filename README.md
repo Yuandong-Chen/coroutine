@@ -1,4 +1,4 @@
-**ezCoroutine Lib in 300 lines of C code (with some gcc inline assembly)**
+**ezthread Lib in 300 lines of C code (with some gcc inline assembly)**
 
 Overall Design:
 We use circular linked list to link all the task control blocks, which contain all the info needed to restore program's context such as IP, BP, SP registers, thread identity and so on. The trick is in inline assembly. We restore some stack-related registers, then to use X86 jump instruction to force IP to point to the IP register of next task control blocks saved earlier, so the next task comes into action. Simple enough to read the source code directly.

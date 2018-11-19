@@ -1,3 +1,5 @@
+NOTE: MacOSX is now 10.14.X, any 32 bit program cannot be compiled and 64 bit C library is altered, so current coroutine is not supported under 10.14.X.
+
 It's an asymmetric coroutine library (like lua).
 
 You can use coroutine_open to open a schedule first, and then create coroutine in that schedule. 

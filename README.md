@@ -11,7 +11,7 @@ But switching context will copy the stack the coroutine used. Most importantly, 
 
 Read source for detail.
 
-The Only Supported Environment:
+The Only Supported Environment (High Sierra is the last supported version, because it is the last version compatible with 32-bits):
 MacBook Air: X64 / MacOSX 10.9.5/ LLVM 3.5svn
 
 More Detail: [cnblogs in chinese](http://www.cnblogs.com/github-Yuandong-Chen/p/6973932.html "Implementation Tutorial")
